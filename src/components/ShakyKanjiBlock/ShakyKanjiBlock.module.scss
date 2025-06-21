@@ -1,0 +1,42 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // left align
+  padding-left: 3rem; // nudged more to right
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  z-index: 20;
+
+  @media (min-width: 768px) {
+    padding-left: 6rem;
+    font-size: 1.5rem;
+  }
+}
+
+.line {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.char {
+  display: inline-block;
+  margin: 0 2px; // smaller margin for better spacing
+  animation: gentleShake 1s ease-in-out infinite alternate;
+}
+
+:global {
+  @keyframes gentleShake {
+    0% {
+      transform: translateY(0) rotate(-5deg);
+    }
+    50% {
+      transform: translateY(-2px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(-2deg);
+    }
+  }
+}

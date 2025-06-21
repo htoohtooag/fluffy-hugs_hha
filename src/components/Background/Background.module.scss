@@ -1,0 +1,108 @@
+.background {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  background-position: 0 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  @media (max-width: 480px) {
+    background-size: 750px;
+  }
+}
+
+.bubbles {
+  background-image: url("/assets/bubbles/bubble-background.png");
+  background-size: 1500px 1500px;
+
+  &.verticalScroll {
+    animation: bubbleScrollVertical 30s linear infinite;
+  }
+
+  &.horizontalScroll {
+    animation: bubbleScrollHorizontal 30s linear infinite;
+  }
+}
+
+.animals {
+  background-image: url("/assets/animals.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 1;
+
+  &.visible {
+    opacity: 0.8;
+    animation: animalsMoveLeft 40s linear infinite, animalsRotate 8s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes bubbleScrollVertical {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -1500px;
+  }
+}
+
+@keyframes bubbleScrollHorizontal {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1500px 0;
+  }
+}
+
+@keyframes animalsMoveLeft {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -2000px center;
+  }
+}
+
+@keyframes animalsRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.paper {
+  transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform: translate(65%, -43.4%);
+  opacity: 0;
+
+  &.active {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+.neko {
+  filter: drop-shadow(2px 4px 6px #eeeeee);
+  transform: translate(-10%, 62.5%) rotate(15deg);
+  transform-origin: 67.5% 12.5%;
+  animation: nekoAnimation 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+}
+
+@keyframes nekoAnimation {
+  0% {
+    transform: translate(-10%, 62.5%) rotate(15deg);
+  }
+  100% {
+    transform: translate(-10%, 62.5%) rotate(-15deg);
+  }
+}
