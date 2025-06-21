@@ -1,40 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fluffy Hugs 🐾
+
+[Live Demo](https://fluffy-hugs-hha.vercel.app/)
+
+---
+
+## Overview
+
+Fluffy Hugs is a delightful interactive web project showcasing cute animal characters with smooth animations, built using Next.js and React. It features a playful character grid with custom animations, a dynamic main character, and an engaging UI designed to bring fluffy animal lovers joy.
+
+---
+
+## About
+
+This is a demo project featuring a fun and animated character grid with smooth transitions and a custom main character that changes states. It also includes an animated Japanese Kanji text block and social media links.
+
+I started by using some existing resources from GitHub, but I modified a lot and added my own components and styles. The app is a single page split into three main hero sections focusing on visuals and animations.
+
+---
+
+---
+
+## Demo
+
+Check out the live demo here: [https://fluffy-hugs-hha.vercel.app/](https://fluffy-hugs-hha.vercel.app/)
+
+---
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/) — React framework for server-side rendering and static site generation
+- [React](https://reactjs.org/) — UI library
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS framework for styling
+- [Zustand](https://github.com/pmndrs/zustand) — Lightweight state management
+- Custom animations with CSS and React components
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v14 or higher recommended)
+- npm or yarn package manager
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/your-username/fluffy-hugs.git fluffy-hugs
+   cd fluffy-hugs
